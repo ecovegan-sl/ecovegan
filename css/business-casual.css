@@ -24,8 +24,8 @@ p {
 }
 
 .site-heading {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-transform: uppercase;
   line-height: 1;
   font-family: 'Raleway';
@@ -66,6 +66,8 @@ p {
 
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #mainNav {
@@ -172,6 +174,10 @@ p {
   }
 }
 
+.about-button {
+  position: relative;
+}
+
 @media (min-width: 992px) {
   .product-item .product-item-title {
     position: relative;
@@ -186,9 +192,46 @@ p {
   .product-item .product-item-description {
     position: relative;
     z-index: 1;
-    margin-top: -3rem;
+    margin-top: -4rem;
     max-width: 50vw;
   }
+}
+
+.products {
+  background: none;
+}
+
+.products .site-heading {
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+}
+
+.products .page-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.products .page-section .container {
+  max-width: 1024px;
+}
+
+@media (min-width: 692px) {
+  .products .page-section {
+    width: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .products .page-section {
+    width: 33%;
+  }
+}
+
+.products .bg-faded {
+  margin-top: 1rem;
 }
 
 .list-hours {
