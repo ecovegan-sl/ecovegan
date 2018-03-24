@@ -15,6 +15,14 @@ h6 {
   @include heading-font;
 }
 
+a {
+  color: #FFFFFF; 
+  @include heading-font;
+  &:hover {
+    color: #FFFFFF;
+  }
+}
+
 p {
   line-height: 1.75;
 }
@@ -65,4 +73,28 @@ p {
   background-color: fade-out($white, 0.15);
   margin-right: auto;
   margin-left: auto;
+}
+
+.languages {
+  left: -33%;
+  padding-top: 10px;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  z-index: 999;
+  ul {
+    text-align: right;
+    padding-right: 10px;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      a {
+        padding: 2px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    left: 0;
+    top: 0;
+  }
 }

@@ -15,6 +15,15 @@ h6 {
   font-family: 'Raleway';
 }
 
+a {
+  color: #FFFFFF;
+  font-family: 'Raleway';
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
 p {
   line-height: 1.75;
 }
@@ -68,6 +77,36 @@ p {
   background-color: rgba(255, 255, 255, 0.85);
   margin-right: auto;
   margin-left: auto;
+}
+
+.languages {
+  left: -33%;
+  padding-top: 10px;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  z-index: 999;
+}
+
+.languages ul {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.languages ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.languages ul li a {
+  padding: 2px;
+}
+
+@media (min-width: 992px) {
+  .languages {
+    left: 0;
+    top: 0;
+  }
 }
 
 #mainNav {
